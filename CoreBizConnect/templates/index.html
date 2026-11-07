@@ -1,0 +1,532 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Index{% endblock %}
+{% block content %}
+   <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="hero-content">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="content">
+                <h1>Transforming Ideas Into Strategic Business Solutions</h1>
+                <p>We partner with forward-thinking companies to accelerate growth, optimize operations, and unlock their full potential through innovative consulting approaches and data-driven insights.</p>
+                <div class="cta-group">
+                  <a href="#about" class="btn-primary">Start Your Journey</a>
+                  <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="btn-secondary glightbox">
+                    <i class="bi bi-play-circle"></i>
+                    <span>Watch Our Story</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="hero-image">
+                <img src="{% static 'assets/images/about/about-8.webp' %}" alt="Corporate Business" class="img-fluid">
+                <div class="floating-card" data-aos="fade-up" data-aos-delay="300">
+                  <div class="card-content">
+                    <div class="metric">
+                      <span class="number">150+</span>
+                      <span class="label">Successful Projects</span>
+                    </div>
+                    <div class="metric">
+                      <span class="number">98%</span>
+                      <span class="label">Client Satisfaction</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+       <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>Find Out More About Us</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="content">
+              <h2>Building Excellence Through Innovation and Integrity</h2>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+
+              <div class="description">
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+              </div>
+
+              <div class="stats-row">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                  <div class="stat-number">
+                    <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>+
+                  </div>
+                  <div class="stat-label">Years of Excellence</div>
+                </div>
+
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                  <div class="stat-number">
+                    <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1" class="purecounter"></span>+
+                  </div>
+                  <div class="stat-label">Satisfied Clients</div>
+                </div>
+
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="500">
+                  <div class="stat-number">
+                    <span data-purecounter-start="0" data-purecounter-end="1200" data-purecounter-duration="1" class="purecounter"></span>+
+                  </div>
+                  <div class="stat-label">Projects Completed</div>
+                </div>
+              </div><!-- End Stats Row -->
+
+              <div class="cta-section" data-aos="fade-up" data-aos-delay="300">
+                <a href="#team" class="btn-link">Meet Our Team <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+            <div class="image-container">
+              <img src="{% static 'assets/images/about/about-square-8.webp' %}" alt="About Us" class="img-fluid">
+              <div class="image-overlay">
+                <div class="overlay-content">
+                  <i class="bi bi-award"></i>
+                  <div class="overlay-text">
+                    <h4>Award Winning</h4>
+                    <p>Excellence in Service</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+      <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Check Our Services</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-laptop"></i>
+              </div>
+              <h3>Web Development</h3>
+              <p>Crafting responsive, modern websites that deliver exceptional user experiences and drive business growth.</p>
+              <a href="service-details.html" class="service-link">
+                <span>Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-brush"></i>
+              </div>
+              <h3>Brand Design</h3>
+              <p>Creating compelling visual identities that communicate your brand's essence and resonate with your audience.</p>
+              <a href="service-details.html" class="service-link">
+                <span>Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <h3>Digital Marketing</h3>
+              <p>Strategic marketing solutions that amplify your reach and convert prospects into loyal customers.</p>
+              <a href="service-details.html" class="service-link">
+                <span>Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-phone"></i>
+              </div>
+              <h3>Mobile Apps</h3>
+              <p>Native and cross-platform mobile applications that provide seamless functionality across all devices.</p>
+              <a href="service-details.html" class="service-link">
+                <span>Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h3>Cybersecurity</h3>
+              <p>Comprehensive security solutions to protect your digital assets and maintain customer trust.</p>
+              <a href="service-details.html" class="service-link">
+                <span>Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bi bi-people"></i>
+              </div>
+              <h3>Consulting</h3>
+              <p>Expert guidance and strategic insights to optimize your business processes and achieve sustainable growth.</p>
+              <a href="service-details.html" class="service-link">
+                <span>Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+     <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Check Our&nbsp; Portfolio</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="fitRows" data-sort="original-order">
+
+          <div class="portfolio-filters-wrapper" data-aos="fade-up" data-aos-delay="100">
+            <ul class="portfolio-filters isotope-filters">
+              <li data-filter="*" class="filter-active">All Projects</li>
+              <li data-filter=".filter-branding">Branding</li>
+              <li data-filter=".filter-web">Web Design</li>
+              <li data-filter=".filter-print">Print Design</li>
+              <li data-filter=".filter-motion">Motion</li>
+            </ul>
+          </div>
+
+          <div class="row gy-4 portfolio-grid isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-card">
+                <div class="image-container">
+                  <img src="{% static 'assets/images/portfolio/portfolio-3.webp' %}" class="img-fluid" alt="Brand Identity" loading="lazy">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <a href="{% static 'assets/images/portfolio/portfolio-3.webp' %}" class="glightbox zoom-link" title="Brand Identity Project">
+                        <i class="bi bi-zoom-in"></i>
+                      </a>
+                      <a href="{% static 'assets/images/portfolio/portfolio-3.webp' %}" class="details-link" title="View Project Details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                  <h3>Brand Identity</h3>
+                  <p>Corporate branding and visual identity system</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <div class="image-container">
+                  <img src="{% static 'assets/images/portfolio/portfolio-12.webp' %}" class="img-fluid" alt="E-commerce Platform" loading="lazy">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <a href="{% static 'assets/images/portfolio/portfolio-12.webp' %}" class="glightbox zoom-link" title="E-commerce Platform">
+                        <i class="bi bi-zoom-in"></i>
+                      </a>
+                      <a href="{% static 'assets/images/portfolio/portfolio-12.webp' %}" class="details-link" title="View Project Details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                  <h3>E-commerce Platform</h3>
+                  <p>Modern online shopping experience</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-print">
+              <div class="portfolio-card">
+                <div class="image-container">
+                  <img src="{% static 'assets/images/portfolio/portfolio-7.webp' %}" class="img-fluid" alt="Magazine Design" loading="lazy">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <a href="{% static 'assets/images/portfolio/portfolio-7.webp' %}" class="glightbox zoom-link" title="Magazine Design">
+                        <i class="bi bi-zoom-in"></i>
+                      </a>
+                      <a href="{% static 'assets/images/portfolio/portfolio-7.webp' %}" class="details-link" title="View Project Details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                  <h3>Magazine Design</h3>
+                  <p>Editorial layout and typography</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-motion">
+              <div class="portfolio-card">
+                <div class="image-container">
+                  <img src="{% static 'assets/images/portfolio/portfolio-8.webp' %}" class="img-fluid" alt="Motion Graphics" loading="lazy">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <a href="{% static 'assets/images/portfolio/portfolio-8.webp' %}" class="glightbox zoom-link" title="Motion Graphics">
+                        <i class="bi bi-zoom-in"></i>
+                      </a>
+                      <a href="{% static 'assets/images/portfolio/portfolio-8.webp' %}" class="details-link" title="View Project Details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                  <h3>Motion Graphics</h3>
+                  <p>Animated visual storytelling</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-card">
+                <div class="image-container">
+                  <img src="{% static 'assets/images/portfolio/portfolio-9.webp' %}" class="img-fluid" alt="Logo Collection" loading="lazy">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <a href="{% static 'assets/images/portfolio/portfolio-9.webp' %}" class="glightbox zoom-link" title="Logo Collection">
+                        <i class="bi bi-zoom-in"></i>
+                      </a>
+                      <a href="{% static 'assets/images/portfolio/portfolio-9.webp' %}" class="details-link" title="View Project Details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                  <h3>Logo Collection</h3>
+                  <p>Diverse brand mark explorations</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <div class="image-container">
+                  <img src="{% static 'assets/images/portfolio/portfolio-4.webp' %}" class="img-fluid" alt="Mobile App Design" loading="lazy">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <a href="{% static 'assets/images/portfolio/portfolio-4.webp' %}" class="glightbox zoom-link" title="Mobile App Design">
+                        <i class="bi bi-zoom-in"></i>
+                      </a>
+                      <a href="{% static 'assets/images/portfolio/portfolio-4.webp' %}" class="details-link" title="View Project Details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                  <h3>Mobile App Design</h3>
+                  <p>User-centered interface design</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-print">
+              <div class="portfolio-card">
+                <div class="image-container">
+                  <img src="{% static 'assets/images/portfolio/portfolio-10.webp' %}" class="img-fluid" alt="Packaging Design" loading="lazy">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <a href="{% static 'assets/images/portfolio/portfolio-10.webp' %}" class="glightbox zoom-link" title="Packaging Design">
+                        <i class="bi bi-zoom-in"></i>
+                      </a>
+                      <a href="{% static 'assets/images/portfolio/portfolio-10.webp' %}" class="details-link" title="View Project Details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                  <h3>Packaging Design</h3>
+                  <p>Sustainable product packaging solutions</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-motion">
+              <div class="portfolio-card">
+                <div class="image-container">
+                  <img src="{% static 'assets/images/portfolio/portfolio-11.webp' %}" class="img-fluid" alt="Brand Animation" loading="lazy">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <a href="{% static 'assets/images/portfolio/portfolio-11.webp' %}" class="glightbox zoom-link" title="Brand Animation">
+                        <i class="bi bi-zoom-in"></i>
+                      </a>
+                      <a href="{% static 'assets/images/portfolio/portfolio-11.webp' %}" class="details-link" title="View Project Details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                  <h3>Brand Animation</h3>
+                  <p>Dynamic brand identity systems</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Grid -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+        <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Need Help? Contact Us</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-stretch">
+          <div class="col-lg-7 order-lg-1 order-2" data-aos="fade-right" data-aos-delay="200">
+            <div class="contact-form-container">
+              <div class="form-intro">
+                <h2>Let's Start a Conversation</h2>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
+              </div>
+
+            <!-- templates/myapp/student_form.html -->
+<form method="POST">
+    {% csrf_token %}
+    
+    <!-- Render options -->
+    {{ form.as_p }}  <!-- Renders fields wrapped in paragraph elements -->
+    
+    <button type="submit">Submit Record</button>
+</form>
+            </div>
+          </div>
+
+          <div class="col-lg-5 order-lg-2 order-1" data-aos="fade-left" data-aos-delay="300">
+            <div class="contact-sidebar">
+              <div class="contact-header">
+                <h3>Get in Touch</h3>
+                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud.</p>
+              </div>
+
+              <div class="contact-methods">
+                <div class="contact-method" data-aos="fade-in" data-aos-delay="350">
+                  <div class="contact-icon">
+                    <i class="bi bi-geo-alt"></i>
+                  </div>
+                  <div class="contact-details">
+                    <span class="method-label">Address</span>
+                    <p>892 Park Avenue, Manhattan<br>New York, NY 10075</p>
+                  </div>
+                </div>
+
+                <div class="contact-method" data-aos="fade-in" data-aos-delay="400">
+                  <div class="contact-icon">
+                    <i class="bi bi-envelope"></i>
+                  </div>
+                  <div class="contact-details">
+                    <span class="method-label">Email</span>
+                    <p>hello@businessdemo.com</p>
+                  </div>
+                </div>
+
+                <div class="contact-method" data-aos="fade-in" data-aos-delay="450">
+                  <div class="contact-icon">
+                    <i class="bi bi-telephone"></i>
+                  </div>
+                  <div class="contact-details">
+                    <span class="method-label">Phone</span>
+                    <p>+1 (555) 789-2468</p>
+                  </div>
+                </div>
+
+                <div class="contact-method" data-aos="fade-in" data-aos-delay="500">
+                  <div class="contact-icon">
+                    <i class="bi bi-clock"></i>
+                  </div>
+                  <div class="contact-details">
+                    <span class="method-label">Hours</span>
+                    <p>Monday - Friday: 9AM - 6PM<br>Saturday: 10AM - 4PM</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="connect-section" data-aos="fade-up" data-aos-delay="550">
+                <span class="connect-label">Connect with us</span>
+                <div class="social-links">
+                  <a href="#" class="social-link">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                  <a href="#" class="social-link">
+                    <i class="bi bi-twitter-x"></i>
+                  </a>
+                  <a href="#" class="social-link">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="#" class="social-link">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Contact Section -->
+{% endblock %}

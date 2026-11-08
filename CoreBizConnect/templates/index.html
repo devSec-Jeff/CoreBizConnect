@@ -60,12 +60,11 @@
           <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
             <div class="content">
               <h2>Building Excellence Through Innovation and Integrity</h2>
-              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+              <p class="lead">We are a team of dedicated professionals committed to delivering exceptional results and maintaining the highest standards of integrity in everything we do.</p>
 
               <div class="description">
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Through our commitment to excellence and innovation, we strive to exceed expectations and deliver solutions that drive success for our clients.</p>
 
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
               </div>
 
               <div class="stats-row">
@@ -429,7 +428,7 @@
 
     </section><!-- /Portfolio Section -->
 
-        <!-- Contact Section -->
+   <!-- Contact Section -->
     <section id="contact" class="contact section">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -443,18 +442,61 @@
             <div class="contact-form-container">
               <div class="form-intro">
                 <h2>Let's Start a Conversation</h2>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
+                <p>Reach out to us</p>
               </div>
 
-            <!-- templates/myapp/student_form.html -->
-<form method="POST">
-    {% csrf_token %}
-    
-    <!-- Render options -->
-    {{ form.as_p }}  <!-- Renders fields wrapped in paragraph elements -->
-    
-    <button type="submit">Submit Record</button>
-</form>
+              <form action="{% url 'contact' %}" method="post" class="contact-form">
+                {% csrf_token %}
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-field">
+                      <input type="text" name="name" class="form-input" id="userName" placeholder="Your Name" required="">
+                      <label for="userName" class="field-label">Name</label>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-field">
+                      <input type="email" class="form-input" name="email" id="userEmail" placeholder="Your Email" required="">
+                      <label for="userEmail" class="field-label">Email</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-field">
+                      <input type="tel" class="form-input" name="phone" id="userPhone" placeholder="Your Phone">
+                      <label for="userPhone" class="field-label">Phone</label>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-field">
+                      <input type="text" class="form-input" name="subject" id="messageSubject" placeholder="Subject" required="">
+                      <label for="messageSubject" class="field-label">Subject</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-field message-field">
+                  <textarea class="form-input message-input" name="message" id="userMessage" rows="5" placeholder="Tell us about your project" required=""></textarea>
+                  <label for="userMessage" class="field-label">Message</label>
+                </div>
+
+                <div class="my-3">
+    {% if request.GET.success %}
+        <div class="sent-message" style="display: block;">
+            Your message has been sent. Thank you!
+        </div>
+    {% endif %}
+</div>
+
+                <button type="submit" class="send-button">
+                  Send Message
+                  <span class="button-arrow">→</span>
+                </button>
+              </form>
             </div>
           </div>
 
@@ -462,7 +504,7 @@
             <div class="contact-sidebar">
               <div class="contact-header">
                 <h3>Get in Touch</h3>
-                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud.</p>
+                <p></p>
               </div>
 
               <div class="contact-methods">
@@ -472,7 +514,7 @@
                   </div>
                   <div class="contact-details">
                     <span class="method-label">Address</span>
-                    <p>892 Park Avenue, Manhattan<br>New York, NY 10075</p>
+                    <p>Nairobi<br>Westlands</p>
                   </div>
                 </div>
 
@@ -482,7 +524,7 @@
                   </div>
                   <div class="contact-details">
                     <span class="method-label">Email</span>
-                    <p>hello@businessdemo.com</p>
+                    <p>hello@business.com</p>
                   </div>
                 </div>
 
@@ -492,7 +534,7 @@
                   </div>
                   <div class="contact-details">
                     <span class="method-label">Phone</span>
-                    <p>+1 (555) 789-2468</p>
+                    <p>+254 700 000 000</p>
                   </div>
                 </div>
 
